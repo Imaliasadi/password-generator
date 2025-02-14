@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <input type="range" min="0" max="50" value="8" id="slider" />
+    <p>length: <span id="value">8</span></p>
+    <label><input type="checkbox" checked id="uppercase" />uppercase</label>
+    <label><input type="checkbox" checked id="lowercase" />lowercase</label>
+    <label><input type="checkbox" checked id="numbers" />numbers</label>
+    <label><input type="checkbox" checked id="symbols" />symbols</label>
+    <div>
+      <p>generated password:</p>
+      <p id="generated"></p>
+      <button id="copyButton">Copy Password</button>
+      <span id="copyFeedback" style="display: none">Copied!</span>
+    </div>
+    <button id="generateButton">Generate Password</button>
+    <script src="script.js"></script>
+  </body>
+</html>
